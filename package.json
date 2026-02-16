@@ -1,0 +1,13 @@
+{
+  "name": "jsonresume-utils",
+  "version": "0.1.0",
+  "main": "./src",
+  "types": "./src",
+  "exports": {
+    "./*": "./src/*.ts"
+  },
+  "files": ["src"],
+  "peerDependencies": {
+    "typescript": ">=4.0.0"
+  }
+}
