@@ -1,13 +1,28 @@
 {
-  "name": "jsonresume-utils",
-  "version": "0.1.0",
-  "main": "./src",
-  "types": "./src",
-  "exports": {
-    "./*": "./src/*.ts"
+  "name": "@greg-bush/jsonresume-utils",
+  "version": "1.0.5",
+  "description": "Utilities for jsonresume",
+  "type": "module",
+  "main": "index.ts",
+  "author": "Grigorii Bushmanov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Greg-Bush/jsonresume-utils.git"
   },
-  "files": ["src"],
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "typescript": ">=4.0.0"
+  },
+  "scripts": {
+    "prepare": "barrelsby --directory ./ --delete --local"
+  },
+  "devDependencies": {
+    "barrelsby": "^2.8.1"
+  },
+  "dependencies": {
+    "jsonresume-themeutils": "^1.4.3"
   }
 }
